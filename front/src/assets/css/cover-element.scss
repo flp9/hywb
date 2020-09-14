@@ -1,0 +1,102 @@
+//element-ui覆盖
+//.................表单....................
+.el-form{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.el-form-item{
+  margin-bottom: 18px!important;
+}
+//日期选择器
+.el-date-editor{
+  width: 100%!important;
+}
+//.................表格....................
+.el-table td, .el-table th{
+  padding: 8px 0!important;
+}
+//.................分页....................
+.el-pagination{
+  padding: 10px 15px 10px 15px!important;
+}
+//栅格padding
+.el-row .el-col{
+  padding-right: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+//..............Collapse 折叠面板...........
+.el-collapse{
+  padding: 10px;
+}
+.el-collapse-item__wrap{
+  background: none!important;
+}
+.el-collapse-item__header{
+  padding-left: 15px;
+}
+.el-collapse-item{
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.el-collapse-item__content{
+  padding-bottom: 15px;
+}
+//分割线
+.el-dropdown-menu .el-divider--horizontal{
+    margin: 0;
+}
+.el-dropdown-menu__item {
+  line-height: 26px;
+}
+.el-input-group__append{
+  color: #ffffff;
+  background-color:#409EFF;
+  border-color: #409EFF;
+}
+.el-dialog__header{
+  border-bottom: 1px solid #e5e5e5;
+}
+.el-dialog__footer{
+  border-top: 1px solid #e5e5e5;
+}
+.el-dialog__body{
+  padding: 15px;
+}
+.el-upload {
+  width: 100%;
+}
+.el-upload-dragger{
+  width:  100%;
+  height: 100px;
+  .el-icon-upload {
+    margin: 6px 0;
+    font-size: 42px;
+    line-height: 40px;
+  }
+}
+.el-upload-dragger .el-upload__text {
+  font-size: 14px;
+}
+.el-drawer.rtl{
+  background: #dbe2e9;
+  .el-drawer__header{
+    margin-bottom: 16px;
+  }
+  .el-drawer__header>:first-child{
+    font-size: 18px;
+  }
+  .el-drawer__body{
+    padding-right: 10px;
+  }
+}
+:focus{
+  outline:0;
+}
+
+.el-cascader{
+  width: 100%;
+}
+.el-select{
+  width: 100%;
+}

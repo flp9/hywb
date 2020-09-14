@@ -1,0 +1,77 @@
+//弹窗
+.f-mask{
+  background: rgba(0, 0, 0, .6);
+  z-index: 5000;
+  .f-dialog{
+    //position: fixed;
+    //z-index: 5001;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    min-width: 600px;
+    margin-top: 50px;
+    //top: 50%;
+    //left: 50%;
+    //transform: translate(-50%, -50%);
+    background-color:#FFFFFF;
+    .blueHead{
+      color: #ffffff;
+      background-color: #1582dc;
+      border-color: #1582dc;
+    }
+    .f-dialog-header{
+      padding: 10px 15px;
+      border-bottom: 1px solid #e5e5e5;
+      h2{
+        margin: 5px;
+      }
+      p{
+        margin: 0;
+      }
+      .smallTitle{
+        padding-left: 8px;
+        font-size: 12px;
+      }
+    }
+    .dialog-body-form{
+      padding: 15px;
+    }
+    .f-dialog-body::-webkit-scrollbar {
+      border-radius: 2px;
+      width: 4px;   /* 滚动条宽度， width：对应竖滚动条的宽度  height：对应横滚动条的高度*/
+      background: white;
+    }
+    .f-dialog-body::-webkit-scrollbar-thumb {
+      height: 20px;    /* 滚动条滑块长度 */
+      background-color: #ccc;
+    }
+    .f-dialog-body{
+      //min-height:480px;
+      //overflow-y: scroll;
+      .ul-lists{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        >li{
+          height: 40px;
+          line-height: 40px;
+          padding: 0 10px;
+        }
+        >li:not(:last-child){
+          border-bottom: 1px solid #e3e6f3;
+        }
+        i{
+          padding-right: 8px;
+        }
+      }
+    }
+    .f-dialog-foot{
+      padding: 15px;
+      text-align: right;
+      border-top: 1px solid #e5e5e5;
+      .f-btn-sure{
+        width: 100%;
+      }
+    }
+  }
+}

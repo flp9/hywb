@@ -1,0 +1,140 @@
+.login-box {
+    width: 500px;
+    height: 300px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: #59595a;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.login-form-box {
+    position: absolute;
+    margin: 0 auto;
+    width: 80%;
+    left: 10%;
+    top: 60px;
+}
+
+.login-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: #515e72;
+    background-image: url(../img/login_bg.png);
+    background-size: 100% 100%;
+}
+
+.head-box {
+    font-size: 42px;
+    line-height: 140px;
+    height: 140px;
+    color: #4B94DF;
+    width: 100%;
+}
+
+.footer-box {
+    text-align: center;
+    line-height: 60px;
+    display: none;
+}
+
+.main-container {
+    padding: 0px !important;
+}
+
+.logo {
+    width: 80px;
+    padding: 10px;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mar-l-2 {
+    margin-left: 2rem;
+}
+
+.mar-r-2 {
+    margin-right: 2rem;
+}
+
+.pad-10 {
+    padding: 10px;
+    ;
+}
+.pad-bom-30 {
+    padding-bottom: 30px !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.danger {
+    color: #f56c6c;
+}
+
+.warning {
+    color: #e6a23c;
+}
+
+.primary {
+    color: #409eff;
+}
+
+.drawerStyle {
+    background-color: #e3e9ea;
+}
+
+.drawerForm {
+    padding: 1rem;
+}
+
+.el-table .warning-row {
+    background: #f3f2f0;
+}
+
+.el-table .success-row {
+    background: #e0ebd9 !important;
+}
+.pageBottom {
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+}
+.footer-bg{
+    background: #efefef;
+}
+.treeTableStyle {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 10px
+}
+
+.topBar {
+    height: 45px;
+    line-height: 44px;
+    padding-left: 5px;
+    border-bottom: 1px solid #dbdbdb;
+}

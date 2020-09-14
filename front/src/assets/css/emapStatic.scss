@@ -1,0 +1,157 @@
+//地图标记点样式
+/*标记的原点*/
+.markPoints{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 20;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+//添加标记点默认样式
+.markPoints.default {
+  //width: 20px;
+  //height: 22px;
+  background: url("../emap_images/marker_red02.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.sensor.markPoints,.img.markPoints{
+  //width: 18px;
+  //height: 18px;
+}
+.img-box {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 202;
+}
+//图片-设备-传感器样式
+span.img .img-box{
+  background-color: #0e78c5;
+  border-radius: 3px;
+}
+span.sensor .img-box{
+  border-radius: 50%;
+}
+//设备图标各种状态样式
+span.equip.warning > .img-box {
+  background: url("../emap_images/marker_red.png") no-repeat center;
+  background-size: 100% 100%;
+}
+span.equip.offline > .img-box {
+  background: url("../emap_images/marker_red01.png") no-repeat center;
+  background-size: 100% 100%;
+}
+span.equip.online > .img-box {
+  background: url("../emap_images/marker_red03.png") no-repeat center;
+  background-size: 100% 100%;
+}
+span.equip.fault > .img-box {
+  background: url("../emap_images/marker_red04.png") no-repeat center;
+  background-size: 100% 100%;
+}
+//传感器图标各种状态样式
+span.sensor.warning > .img-box {
+  background-color: #ec2d2d;
+}
+span.sensor.offline > .img-box {
+  background-color: #a8a8a8;
+}
+span.sensor.online > .img-box {
+  background-color: #2dec6c;
+}
+span.sensor.fault > .img-box {
+  background-color: #ecd82d;
+}
+//设备-图片-传感器内部字符图标区分
+.img-box img{
+  width: 14px;
+  margin-top: 2px;
+}
+.markPoints.online,.markPoints.warning{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50%,
+  75% {
+    transform: scale(4);
+  }
+  78%, 100% {
+    opacity: 0;
+  }
+}
+.sensor.warning:before,.sensor.online:before{
+  width: 10px;
+  height: 10px;
+}
+.equip.warning:before,.equip.online:before{
+  width: 6px;
+  height: 4px;
+  margin-top: 2px;
+  margin-left: -1px;
+}
+.equip.warning:before{
+  box-shadow: 0 -2px 2px 1px red;
+}
+.equip.online:before{
+  box-shadow: 0 -2px 2px 1px #2dec6c;
+}
+.markPoints.warning:before,.markPoints.online:before{
+  content: '';
+  position: absolute;
+  opacity: 1;
+  border-radius: 50%;
+  animation: scale 1s infinite cubic-bezier(0, 0, 0.49, 1.02);
+  animation-delay: 1000ms;
+  transition: 0.3s all ease;
+  transform: scale(1);
+  z-index:201;
+}
+.markPoints.warning:before {
+  background-color: #da3e16;
+}
+.markPoints.online:before {
+  background-color: #36dd6e;
+}
+/*弹窗内容*/
+.Hotspot_popup {
+  .Hotspot_Title{
+    font-size: 16px;
+    line-height: 1;
+    padding-bottom: 4px;
+    color: #303133;
+  }
+  .Hotspot_Message {
+    display: flex;
+    color: #606266;
+    font-size: 12px;
+    .messageLeft{
+      padding-right: 8px;
+      box-sizing: border-box;
+    }
+    p{
+      margin: 3px 0;
+      line-height: 24px;
+    }
+  }
+}
+.selTypeMenu>li[role]{
+  padding:4px 20px!important;
+}
+span.BMap_Marker>div{
+  width:38px!important;
+  height:50px!important;
+}
+.anchorBL>a{
+  display:none
+}
+
+
+
+
